@@ -28,9 +28,6 @@ PRODUCT_RELEASE_NAME := i9300
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/candy5/config/apns.mk)
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
